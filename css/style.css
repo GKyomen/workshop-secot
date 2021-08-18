@@ -1,4 +1,5 @@
-body, ul, h1, h2, h3, p {
+/* ESTILO GERAL */
+* {
     margin: 0;
     padding: 0;
 }
@@ -60,7 +61,7 @@ header a {
 #titulo-pagina {
     text-align: center;
     color: #630043;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 #titulo-pagina::after, #titulo-pagina::before {
@@ -72,22 +73,11 @@ header a {
     margin: 14px auto 10px auto;
 }
 
-#cardapio {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 30px auto;
-}
-
-.item-menu {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.preco-item-menu {
-    min-width: 65px;
+#subtitulo-pagina {
+    color: #B872A2;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
 }
 
 #rodape {
@@ -118,3 +108,74 @@ header a {
 #redes li img {
     width: 40px;
 }
+/* FIM DO ESTILO GERAL */
+
+/* MENU SEMANAL */
+#cardapio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.item-menu {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.preco-item-menu {
+    min-width: 65px;
+}
+/* FIM DO MENU SEMANAL */
+
+/* CONTATO */
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input, select, button {
+    border-radius: 5px;
+}
+
+.campo {
+    float: left;
+    margin: 0.5rem 1rem;
+}
+
+.campo label {
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo select {
+    padding: 0.2rem;
+    border: 1px solid #630043;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+#botao {
+    font-size: 1.2rem;
+    background: #630043;
+    border: 0;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+}
+/* FIM DO CONTATO */
