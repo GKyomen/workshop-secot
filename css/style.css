@@ -53,6 +53,11 @@ header a {
     text-align: center;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
 #titulo-principal {
     font-family: 'Great Vibes', cursive;
     font-size: 100px;
@@ -62,12 +67,12 @@ header a {
     text-align: center;
     color: #630043;
     margin-top: 40px;
+    text-transform: uppercase;
 }
 
 #titulo-pagina::after, #titulo-pagina::before {
     content: "";
     display: block;
-    width: 80%;
     height: 3px;
     background: #630043;
     margin: 14px auto 10px auto;
@@ -115,7 +120,6 @@ header a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
     margin: 30px auto;
 }
 
@@ -129,6 +133,55 @@ header a {
     min-width: 65px;
 }
 /* FIM DO MENU SEMANAL */
+
+/* CURIOSIDADES */
+#info-nutri {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+
+}
+
+.titulo-secao {
+    color: #630043;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border: 1px solid #B872A2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background: #630043;
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 7px;
+}
+
+.divisor {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ccc, #630043, #ccc);
+}
+
+#textos {
+    margin-bottom: 40px;
+}
+
+/* FIM DAS CURIOSIDADES */
 
 /* CONTATO */
 form {
