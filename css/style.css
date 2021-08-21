@@ -107,7 +107,7 @@ main {
 }
 
 #rodape a {
-    text-decoration: inherit;
+    text-decoration: none;
     color: inherit;
 }
 
@@ -204,7 +204,7 @@ th, td {
 
 /* CONTATO */
 form {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
