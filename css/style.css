@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 15px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -11,7 +15,7 @@ body {
 header {
     box-sizing: border-box;
     height: 70px;
-    padding: 1rem;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,24 +28,29 @@ header a {
     font-weight: 500;
 }
 
+#logo {
+    width: 30px;
+}
+
 #menu {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 20px;
 }
 
 #menu a:hover {
     background-color: #B872A2;
+    color: #630043;
 }
 
 
 #menu a {
     display: block;
-    padding: 0.5rem;
+    padding: 10px;
 }
 
 #banner {
-    background: url("/img/banner-menu.png") no-repeat;
+    background: url("/img/banner.png") no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
@@ -60,7 +69,11 @@ main {
 
 #titulo-principal {
     font-family: 'Great Vibes', cursive;
-    font-size: 100px;
+    font-size: 6rem;
+}
+
+#subtitulo-principal, #info-contato {
+    font-size: 1.2rem;
 }
 
 #titulo-pagina {
@@ -100,7 +113,7 @@ main {
 
 #rodape h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 #redes {
@@ -108,6 +121,7 @@ main {
     display: flex;
     gap: 15px;
     margin-top: 10px;
+    width: 150px;
 }
 
 #redes li img {
@@ -123,14 +137,19 @@ main {
     margin: 30px auto;
 }
 
-.item-menu {
+.item-cardapio {
     display: flex;
     gap: 30px;
     margin-top: 30px;
 }
 
-.preco-item-menu {
+.preco-item-cardapio {
     min-width: 65px;
+}
+
+.foto-item-cardapio {
+    width: 200px;
+    height: 200px;
 }
 /* FIM DO MENU SEMANAL */
 
@@ -227,8 +246,75 @@ input, select, button {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-#btn {
+#btn-form {
     display: flex;
     justify-content: center;
 }
 /* FIM DO CONTATO */
+
+/* RESPONSIVIDADE - GERAL */
+@media screen and (max-width: 650px) {
+    #titulo-principal {
+        font-size: 3.75rem;
+    }
+
+    #subtitulo-principal, #info-contato {
+        font-size: 1.1rem;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    #rodape > * {
+        width: 100%;
+        text-align: center;
+    }
+
+    #redes {
+        margin: 10px auto;
+    }
+
+    .item-cardapio {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVIDADE - MENU */
+#btn-menu {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #btn-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #B872A2;
+        height: 100%;
+    }
+
+    #nav.active #menu{
+        display: block;
+    }
+
+    #menu a {
+        padding: 15px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    }
+}

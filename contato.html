@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js" async></script> 
 </head>
+
 <body>
     <header>
-        <a href="index.html">Logo</a>
-        <nav>
+        <a href="index.html"><img id="logo" src="./img/logo_icon.svg" alt="Logo do restaurante Sabor da Bete"></a>
+        <nav id="nav">
+            <button id="btn-menu"><img src="./img/menu_icon.svg" alt="Botão de menu"></button>
             <ul id="menu">
                 <li><a href="index.html">Menu semanal</a></li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
@@ -25,6 +31,7 @@
             </ul>
         </nav>
     </header>
+    
     <div id="banner">
         <div id="titulo">
             <h1 id="titulo-principal">Sabor da Bete</h1>
@@ -35,6 +42,7 @@
             <p id="telefone">15 98765-4321</p>
         </address>
     </div>
+
     <main>
         <h2 id="titulo-pagina">Faça a sua reserva</h2>
         <p id="subtitulo-pagina">Basta preencher o formulário abaixo!</p>
@@ -117,11 +125,12 @@
                 </div>
             </fieldset>
             
-            <div id="btn">
+            <div id="btn-form">
                 <button type="submit" id="botao">Reservar!</button>
             </div>
         </form>
     </main>
+
     <footer id="rodape">
 		<div>
 			<a href="index.html"><h2>Sabor da Bete</h2></a>
@@ -139,4 +148,5 @@
 		</address>
 	</footer>
 </body>
+
 </html>

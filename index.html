@@ -13,13 +13,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
 	<link rel="stylesheet" href="css/style.css">
+	<script src="./js/script.js" async></script> 
 </head>
 
 <body>
 	<header>
-		<a href="index.html">Logo</a>
-		<nav>
+		<a href="index.html"><img id="logo" src="./img/logo_icon.svg" alt="Logo do restaurante Sabor da Bete"></a>
+		<nav id="nav">
+			<button id="btn-menu"><img src="./img/menu_icon.svg" alt="Botão de menu"></button>
 			<ul id="menu">
 				<li><a href="">Menu semanal</a></li>
 				<li><a href="curiosidades.html">Curiosidades</a></li>
@@ -27,6 +31,7 @@
 			</ul>
 		</nav>
 	</header>
+
 	<div id="banner">
 		<div id="titulo">
 			<h1 id="titulo-principal">Sabor da Bete</h1>
@@ -37,51 +42,53 @@
 			<p id="telefone">15 98765-4321</p>
 		</address>
 	</div>
+
 	<main>
 		<h2 id="titulo-pagina">Menu semanal</h2>
 		<ul id="cardapio">
-			<li class="item-menu">
-				<img class="foto-item-menu" src="/img/item-menu-1.png"
+			<li class="item-cardapio">
+				<img class="foto-item-cardapio" src="/img/item-menu-1.png"
 					alt="Foto de dois potes de vidro com suco de beterraba com canudo em um prato preto em cima de uma mesa preta com fatias e folhas de beterraba espalhadas">
-				<div class="info-item-menu">
-					<h3 class="titulo-item-menu">Suco de beterraba</h3>
-					<p class="desc-item-menu">Imagine 400ml do néctar dos deuses. Essa é a descrição para esse maravilhoso suco
+				<div class="info-item-cardapio">
+					<h3 class="titulo-item-cardapio">Suco de beterraba</h3>
+					<p class="desc-item-cardapio">Imagine 400ml do néctar dos deuses. Essa é a descrição para esse maravilhoso suco
 						roxo com efeito detox!</p>
 				</div>
-				<p class="preco-item-menu">R$ 9,<sup>99</sup></p>
+				<p class="preco-item-cardapio">R$ 9,<sup>99</sup></p>
 			</li>
-			<li class="item-menu">
-				<img class="foto-item-menu" src="/img/item-menu-2.png"
+			<li class="item-cardapio">
+				<img class="foto-item-cardapio" src="/img/item-menu-2.png"
 					alt="Foto com a visão superior de uma sopa de beterrraba em um prato fundo branco em uma mesa de madeira com uma toalha quadriculada verde">
-				<div class="info-item-menu">
-					<h3 class="titulo-item-menu">Sopa de beterraba</h3>
-					<p class="desc-item-menu">Para aquecer nossos corações enquanto preenche nosso estômago em dias frios, esse é
+				<div class="info-item-cardapio">
+					<h3 class="titulo-item-cardapio">Sopa de beterraba</h3>
+					<p class="desc-item-cardapio">Para aquecer nossos corações enquanto preenche nosso estômago em dias frios, esse é
 						o pedido certo!</p>
 				</div>
-				<p class="preco-item-menu">R$ 22,<sup>90</sup></p>
+				<p class="preco-item-cardapio">R$ 22,<sup>90</sup></p>
 			</li>
-			<li class="item-menu">
-				<img class="foto-item-menu" src="/img/item-menu-3.png"
+			<li class="item-cardapio">
+				<img class="foto-item-cardapio" src="/img/item-menu-3.png"
 					alt="Foto de uma salada de beterraba em uma tigela de madeira em uma mesa de madeira">
-				<div class="info-item-menu">
-					<h3 class="titulo-item-menu">Salada de beterraba</h3>
-					<p class="desc-item-menu">A forma mais pura do legume mais delicioso do mundo! Peça já sua tigela de salada de
+				<div class="info-item-cardapio">
+					<h3 class="titulo-item-cardapio">Salada de beterraba</h3>
+					<p class="desc-item-cardapio">A forma mais pura do legume mais delicioso do mundo! Peça já sua tigela de salada de
 						beterraba</p>
 				</div>
-				<p class="preco-item-menu">R$ 14,<sup>99</sup></p>
+				<p class="preco-item-cardapio">R$ 14,<sup>99</sup></p>
 			</li>
-			<li class="item-menu">
-				<img class="foto-item-menu" src="/img/item-menu-4.png"
+			<li class="item-cardapio">
+				<img class="foto-item-cardapio" src="/img/item-menu-4.png"
 					alt="Foto de uma salada de beterraba em formato de hambúrguer sobre uma folha de alface em um prato branco.">
-				<div class="info-item-menu">
-					<h3 class="titulo-item-menu">Hambúrguer de beterraba</h3>
-					<p class="desc-item-menu">Você não vai acreditar no sabor incrível que esse prato tem. Perfeito para fazer um
+				<div class="info-item-cardapio">
+					<h3 class="titulo-item-cardapio">Hambúrguer de beterraba</h3>
+					<p class="desc-item-cardapio">Você não vai acreditar no sabor incrível que esse prato tem. Perfeito para fazer um
 						X-Salada.</p>
 				</div>
-				<p class="preco-item-menu">R$ 16,<sup>99</sup></p>
+				<p class="preco-item-cardapio">R$ 16,<sup>99</sup></p>
 			</li>
 		</ul>
 	</main>
+	
 	<footer id="rodape">
 		<div>
 			<a href="index.html"><h2>Sabor da Bete</h2></a>
